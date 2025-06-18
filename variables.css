@@ -1,0 +1,56 @@
+:root {
+  --icons: 1.7rem;
+
+  --cubic-1: cubic-bezier(0.49, 0.67, 0.61, 1.07);
+  --cubic-2: cubic-bezier(0.05, 0.47, 0.7, 1.02);
+
+  --navbar-load-duration: 0.5s;
+  --navbar-load-delay: 1s;
+  --nav-items-load-duration: 1s;
+  --nav-items-load-delay: 1.5s;
+
+  --hero-circle-spin-duration: 10s;
+  --hero-main-text-appear-duration: 1s;
+  --hero-main-text-appear-delay: 1.6s;
+
+  --hero-sub-para-appear-duration: 1s;
+  --hero-sub-para-appear-delay: 2s;
+
+  --hero-arrow-appear-duration: 0.5s;
+  --hero-arrow-appear-delay: 2.4s;
+
+  --hero-text-animation-appear-duration: 0.5s;
+  --hero-text-animation-appear-delay: 2.6s;
+
+  --hero-image-king-appear-duration: 0.8s;
+  --hero-image-king-appear-delay: 2.5s;
+
+  --hero-image-appear-duration: 1s;
+  --hero-image-appear-delay: 3s;
+  --hero-image-div-appear-duration: 1s;
+  --hero-image-div-appear-delay: 3s;
+
+  --hero-button-appear-duration: 0.5s;
+  --hero-button-appear-delay: 3.2s;
+
+  --woman-image-grid-appear-duration: 2.5s;
+  --woman-image-grid-appear-delay: 0.5s;
+
+  --woman-page-menu-appear-duration: 0.5s;
+  --woman-page-menu-appear-delay: 3s;
+
+  --about-us-main-heading-appear-duration: 0.5s;
+  --about-us-main-heading-appear-delay: 2s;
+
+  --about-us-sub-heading-appear-duration: 0.5s;
+  --about-us-sub-heading-appear-delay: 2.2s;
+
+  --about-us-para-appear-duration: 0.5s;
+  --about-us-para-appear-delay: 2.3s;
+  
+--about-us-image-holder-appear-duration: 1.5s;
+ --about-us-image-holder-appear-delay: 2.5s;
+
+  --opacity: 0;
+  --scale: 0;
+}

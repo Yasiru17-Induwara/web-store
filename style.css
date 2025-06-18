@@ -1,0 +1,827 @@
+/* ~ FONTS AND IMPORTS  */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Marcellus&display=swap");
+
+@font-face {
+  font-family: "kanbe";
+  src: url("resources/fonts/Kanbe-Regular.ttf");
+}
+
+@font-face {
+  font-family: "feogra";
+  src: url("resources/fonts/Feogra-Demo.otf");
+}
+@font-face {
+  font-family: "helvetica-now";
+  src: url("resources/fonts/helveticanowtext-bold-demo.ttf");
+}
+
+@font-face {
+  font-family: "katya";
+  src: url("resources/fonts/Katya-9MAw5.ttf");
+}
+
+@font-face {
+  font-family: "kodaro";
+  src: url("resources/fonts/KODARO.otf");
+}
+/* ~ FONTS AND IMPORTS  */
+
+
+*, *::after, *::before{
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+/*  &Admin Add product .php css */
+.add-product-holder {
+  box-sizing: border-box;
+}
+
+.product-image-box{
+    width: 300px;
+    max-height: 400px;
+}
+#imagePreview {
+  width: 100%;
+  height: 100%;
+  /* max-height: 500px; */
+  /* max-width: 300px; */
+  /*  */
+  /* height: 400px; */
+  object-fit: cover;
+  /* Or contain, or fill */
+  border: 1px solid #ccc;
+}
+
+.add-product-heading {
+  font-weight: 700;
+  font-family: manrope;
+  font-size: 1.1rem;
+  margin-block: 20px;
+}
+.add-product-sec {
+  margin-top: 20px;
+}
+/*  &Admin Add product .php css */
+
+/* ^about us  css */
+
+.about-us-plain{
+    margin-top: 70px;
+   
+    display: flex;
+}
+
+.about-us-main-heading{
+      font-weight: 700;
+  font-family: manrope;
+  font-size: clamp(2rem, 5rem, 20rem);
+
+}
+.about-us-sub-heading{
+    padding: 0;
+    margin: 0;
+    font-family: manrope;
+    line-height: 30px;
+    font-weight: 800;
+}
+.about-us-image-holder-2, 
+.about-us-image-holder{
+    display: flex;
+justify-content: center;
+align-items: center;
+max-width: 500px;
+width: min(400px,100%);
+height: 600px;
+
+min-height:max-content ;
+
+overflow: hidden;
+}
+.about-us-image-holder{
+
+border-radius: 300px  300px  0 0 ;
+
+}
+.about-us-image-holder-2{
+    
+    border-radius: 300px  300px  0 0 ;
+
+}
+
+.about-us-image{
+    
+width: 100%;
+height: 100%;
+object-position: top;
+object-fit: cover;
+order: 1;
+
+}
+.about-us-image-2{
+   width: 100%;
+height: 100%;
+object-position: top;
+object-fit: cover;
+order: 3; 
+}
+.about-us-image-2 {
+  order: 1;  
+}
+ 
+.about-sec-1{
+margin-top: 100px;
+div > p{
+    line-height: 30px;
+    width: min(500px,100%);
+    order: 2;
+}
+}
+.about-sec-2{
+margin-top: 100px;
+margin-bottom: 100px;
+div > p{
+    line-height: 30px;
+    width: min(500px,100%);
+    order: 2;
+}
+    ul li{
+      margin-top: 20px;  
+    }
+    
+}
+.a-us-holder{
+    position: relative;
+}
+
+/* .a-us-holder::after{
+content: '';
+position: absolute;
+inset: 0;
+background-color: white;
+} */
+/* ^about us  css */
+
+
+/* & Admin Nav Css */
+.navbar-toggler-icon {
+  filter: brightness(0) invert(1); /* Makes the black icon white */
+}
+.admin-nav-text{
+  display: none !important;
+}
+.navbar .container {
+  height: 50px;
+  display: flex;
+}
+.navbar a img {
+  box-sizing: unset;
+}
+.nav-icons {
+  font-size: var(--icons);
+}
+.navbar{
+  z-index: 999999 !important;
+}
+.offcanvas {
+  height: 100vh;
+   background-color: #000 !important;
+}
+.offcanvas-start {
+  left: 0 !important;
+  transform: translateX(-100%); /* Hidden by default */
+}
+
+.offcanvas-start.show {
+  transform: translateX(0%) !important;
+}
+.navbar-brand{
+  span{
+    font-family: Marcellus;
+  font-size: 1.3rem;
+  }
+}
+/* ^ Animation part Down Here   */
+
+.container > *, .container >*>* , .container *>*>*, .container *>*>*>*{
+  color: black;
+}
+
+.admin-navbar-main{
+position:fixed ;
+right: 0;
+bottom: 0;
+}
+.admin-nav-text{
+  display: block !important;
+}
+
+
+@media only screen and (max-width: 1200px){
+  
+
+      .admin-nav-text{
+        display: none !important;
+      }
+    }
+
+
+/* & Admin Nav Css */
+
+/* ^ Admin Page Css */
+.image-div {
+  width: 60px !important;
+  height: 80px;
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: top;
+  }
+}
+
+.ad-product-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
+}
+.ad-product-image-holder {
+  /* height: 50px;
+    width: 100%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ad-product-description {
+  display: -webkit-box;
+  line-clamp: 2;
+  -webkit-line-clamp: 2; /* Show only 4 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.5em; /* Line spacing */
+  max-height: 6em; /* 4 lines × 1.5em = 6em */
+}
+.ad-product-title {
+  display: -webkit-box;
+  line-clamp: 2;
+  -webkit-line-clamp: 2; /* Show only 4 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.5em; /* Line spacing */
+  max-height: 6em; /* 4 lines × 1.5em = 6em */
+}
+
+.three-dots-btn {
+  /* No default background */
+  background-color: transparent;
+  border: none;
+  /* Light gray border */
+  /* border: 1px solid #ccc;  */
+  /* Make it circular */
+  /* border-radius: 50%;  */
+  padding: 6px 10px;
+  /* Make the dots bigger */
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+  /* color: #333; */
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.three-dots-btn:focus,
+.three-dots-btn:active,
+.three-dots-btn:hover {
+  outline: none;
+  border: none;
+  /* Remove Bootstrap's blue glow */
+  box-shadow: none;
+  /* Optional: darker border on click */
+  /* border-color: #999;  */
+  /* Optional: slight background on click */
+  /* background-color: #f1f1f1;  */
+}
+
+.admin-page-product-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%,400px) , 1fr));
+  gap: 10px;
+}
+
+/* ^ Admin Page Css */
+
+/* & Admin Product Edit POP UP css */
+.add-product-holder {
+  box-sizing: border-box;
+}
+
+.product-image-box{
+    width: 300px;
+    max-height: 400px;
+}
+#imagePreview {
+  /* width: 100%; */
+  height: 100%;
+  max-height: 400px;
+  max-width: 300px;
+  /*  */
+  /* height: 400px; */
+  object-fit: cover;
+  /* Or contain, or fill */
+  border: 1px solid #ccc;
+}
+
+.add-product-heading {
+  font-weight: 700;
+  font-family: manrope;
+  font-size: 1.1rem;
+  margin-block: 20px;
+}
+.add-product-sec {
+  margin-top: 20px;
+}
+
+/* & Admin Product Edit POP UP css */
+
+/*  ^ Footer css */
+.footer-main-holder{
+    min-height: 100px;
+    position: relative;
+}
+
+.footer-list{
+div ul{
+    gap: 30px;
+    list-style: none;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+}
+div ul li{
+    text-decoration: underline white;
+}
+}
+.footer-heading{
+    font-family: Marcellus;
+    font-size: 2rem;
+}
+/*  ^ Footer css */
+
+/* & Hero Section CSS */
+.main-hero {
+position: sticky;
+  top: 0px;
+  z-index: 0;
+/* padding-bottom: 100px ; */
+}
+
+.hero-heading-text {
+
+  font-family: helvetica-now;
+
+  min-width: 100%;
+  font-size: clamp(4rem, -1rem + 10vw, 9rem);
+  text-transform: uppercase;
+}
+
+.sub-para-1 {
+  grid-area: sub-text-1;
+  width: 100%;
+  font-size: 1.1rem;
+}
+.sub-para-2 {
+  grid-area: sub-text-2;
+  width: 100%;
+  font-size: 1.1rem ;
+}
+.arrow {
+  grid-area: arrow;
+  position: relative;
+}
+.hero-arrow-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  span {
+    font-size: 7rem;
+  }
+}
+
+.hero-grid-para {
+  margin-top: 50px;
+  column-gap: 20px;
+  font-size: 1.3rem;
+  display: grid;
+  grid-template-columns: 1fr 300px 1fr;
+
+  grid-template-areas: "sub-text-1  arrow sub-text-2";
+}
+.down-arrow{
+  z-index: 22;
+}
+.hero-image-holder-king {
+  height: 550px;
+  border-radius: 40px 40px 0 0;
+  padding: 0px !important ;
+  margin-top: 60px !important;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  /* background-image: url(resources/images/r-4.jpg);
+  background-position: cover;
+  background-size: 1500px;
+  background-repeat: no-repeat; */
+}
+.hero-image-holder {
+  width: 90%;
+  height: 350px;
+  border-radius: 40px 40px 0 0;
+  overflow: hidden;
+  padding: 0px !important ;
+  margin: 0 !important;
+
+  /* background-image: url(resources/images/r-4.jpg);
+  background-position: cover;
+  background-size: 1500px;
+  background-repeat: no-repeat; */
+}
+
+.hero-image-holder img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  object-position:  center;
+}
+
+.hero-button-explore-more {
+  position: absolute;
+  z-index: 999;
+  bottom: 50px;
+  left: 50%;
+
+    text-decoration: none;
+    color: white;
+
+}
+
+/* * text circle path aniamtion */
+
+.text-animation-holder {
+  position: absolute;
+  top: calc(-50% + 20px);
+  height: max-content;
+  width: max-content;
+  z-index: 11;
+}
+
+.circle-wrap {
+  width: 200px;
+  height: 200px;
+}
+textPath {
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-family: manrope;
+}
+
+.circle-svg {
+  width: 100%;
+  height: 100%;
+}
+/* * text circle path aniamtion */
+
+@media screen and (max-width: 576px) {
+  .hero-grid-para {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "sub-text-1"
+      "sub-text-2";
+  }
+  .hero-arrow-holder {
+    display: none;
+  }
+  .hero-image-holder img {
+    object-position: center;
+  }
+}
+@media screen and (min-width: 576px) {
+  .hero-grid-para {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "sub-text-1"
+      "sub-text-2";
+  }
+  .hero-arrow-holder .arrow {
+    display: none;
+  }
+
+  .hero-image-holder img {
+    object-position: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-grid-para {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "sub-text-1 sub-text-2";
+  }
+  .hero-arrow-holder {
+    display: none;
+  }
+}
+@media screen and (min-width: 992px) {
+  .hero-arrow-holder {
+    display: flex;
+  }
+  .hero-grid-para {
+    grid-template-columns: 1fr 300px 1fr;
+    grid-template-areas: "sub-text-1   arrow  sub-text-2";
+  }
+
+}
+@media screen and (min-width: 1200px) {
+
+}
+@media screen and (min-width: 1400px) {
+
+
+}
+/* @media screen and (min-width: 1400px) {
+}  */
+
+/* & Hero Section CSS */
+
+
+/* ^ User Navbar Css */
+.navbar-toggler-icon {
+  filter: brightness(0) invert(1); /* Makes the black icon white */
+}
+
+.navbar .container {
+  height: 80px;
+  display: flex;
+}
+.navbar a img {
+  box-sizing: unset;
+}
+.nav-icons {
+  font-size: var(--icons);
+}
+.navbar{
+  z-index: 999999 !important;
+}
+.offcanvas {
+  height: 100vh;
+   background-color: #000 !important;
+}
+.offcanvas-start {
+  left: 0 !important;
+  transform: translateX(-100%); /* Hidden by default */
+}
+
+.offcanvas-start.show {
+  transform: translateX(0%) !important;
+}
+.navbar-brand{
+  span{
+    font-family: Marcellus;
+  font-size: 1.3rem;
+  }
+}
+/* ^ Animation part Down Here   */
+
+
+
+.admin-navbar-main{
+    position: fixed;
+    inset: auto 0 0 0;
+}
+
+
+@media only screen and (max-width: 990px){
+    
+    .admin-navbar-main{
+        position: fixed;
+        inset:  0 0 auto 0;
+    }
+}
+
+
+/* ^ User Navbar Css */
+
+/* & Product Card Section  */
+.product-section-holder {
+position: relative;
+top: 150px;
+min-height: 200vh;
+  /* background: white; */
+  z-index: 1; /* HIGHER layer to scroll over */
+  /* margin-top: -100vh;  */
+  /* padding-top: 100vh;   */
+}
+
+
+.product-section-heading {
+  padding-block-start: 30px;
+  padding-block-end: 50px;
+  padding-inline: 10px;
+  font-family: manrope;
+  font-size: 1.2rem;
+  border: none;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(80%, 300px), 1fr));
+  row-gap: 20px;
+  column-gap: 20px;
+
+  grid-auto-rows: 500px 100px;
+}
+
+.product-card {
+  min-height: 600px;
+  grid-row: span 2;
+  gap: 0;
+  display: grid;
+  grid-template-rows: subgrid;
+  row-gap: 20px;
+}
+.card-details-holder {
+  display: grid;
+  grid-template-rows: min(40px , 1fr) 40px;
+}
+
+.product-price{
+    display: flex;
+    align-items: start;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.product-title{
+    font-size: 1rem;
+    font-family: manrope;
+    display: flex;
+    align-items: start;
+}
+
+.product-image-holder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.product-section-explore-button{
+  margin-block: 70px ;
+  padding: 20px;
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: underline;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+a{
+  color: white;
+}
+}
+
+
+@media only screen and (max-width: 780px) {
+.product-grid {
+  grid-auto-rows: 700px 100px;
+}
+}
+/* & Product Card Section  */
+
+
+/* ^ All Woman and Men page css */
+.woman-page-text-holder{
+    /* margin-block-end: 50px; */
+}
+
+.woman-main-text {
+  font-weight: 700;
+  font-family: manrope;
+  font-size: clamp(2rem, 5rem, 20rem);
+  padding-block-start: 70px;
+}
+.woman-para-1 {
+  font-family: manrope;
+  font-size: 1rem;
+  max-width: 900px;
+}
+.woman-para-2 {
+  font-family: manrope;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.woman-page-menu{
+  z-index: 9;
+  cursor: pointer;
+}
+.woman-page-menu {
+  /* position: fixed; */
+  /* bottom: 50px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.woman-page-menu-inside{
+    display: flex;
+    border-radius: 10px;
+    padding-inline: 10px;
+    padding-block: 10px;
+    background-color: black;
+    /* background-color: white; */
+
+    /* color: rgb(0, 0, 0); */
+    color: white;
+    justify-content: space-around;
+    p{
+        padding-inline: 15px;
+        padding-block: 10px;
+        border-radius: 5px;
+        /* background-color: rgba(0, 0, 0, 0.09); */
+        background-color: rgba(255, 255, 255,.2);
+        margin: 0;
+    }
+}
+/* ^ All Woman and Men page css */
+
+/*  & Woman Product section  Css */
+.woman-product-main-container {
+  /* min-height: 50vh; */
+  padding-inline: 10px;
+  padding-block-start: 10px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+/* & */
+.product-section-heading {
+  padding-block-start: 30px;
+  padding-block-end: 50px;
+  padding-inline: 10px;
+  font-family: manrope;
+  font-size: 1.2rem;
+  border: none;
+}
+/* & */
+
+.woman-men-section-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(80%, 300px), 1fr));
+  row-gap: 20px;
+  column-gap: 20px;
+  grid-template-rows: repeat(2, minmax(auto, max-content));
+}
+
+.product-card {
+  min-height: 600px;
+  grid-row: span 2;
+  gap: 0;
+  display: grid;
+  grid-template-rows: subgrid;
+  row-gap: 10px;
+}
+.card-details-holder {
+  display: grid;
+  grid-template-rows: min(40px, 1fr) 40px;
+  overflow: hidden;
+}
+
+.product-price {
+  display: flex;
+  align-items: start;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.product-title {
+  font-size: 1rem;
+  font-family: manrope;
+  display: flex;
+  align-items: start;
+}
+
+.product-image-holder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+@media only screen and (max-width: 780px) {
+  .product-grid {
+    grid-auto-rows: 700px 100px;
+  }
+}
+
+/*  & Woman Product section  Css */
